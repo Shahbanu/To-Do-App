@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>To-Do-App</title>
+    
+</head>
+<body>
+    <!--header-->
+    <section class="container">
+    <div class="heading">
+        <h1>To-Do-App</h1>
+    </div>
+    <form id="form">
+        <input
+         type="text" 
+         id="input" 
+         placeholder="Add New Task" >
+         <div id="msg"></div>
+         <br>
+        <button 
+        type="submit">
+        Add
+      </button>
+
+        
+</form>
+
+   <h2>Tasks</h2>
+
+   <div id="posts">
+    <div>
+      <p>Task1</p>
+      <span class="options">
+        <div get></div>
+        <i onclick="editPost(this)" class="fas fa-edit"></i>
+        <i onclick="deletePost(this)" class="fas fa-trash-alt"></i>
+      </span>
+    </div>
+    <div>
+      <p>Task2</p>
+      <span class="options">
+        <div get></div>
+        <i class="fas fa-edit"></i>
+        <i onclick="deletePost(this)" class="fas fa-trash-alt"></i>
+      </span>
+    </div>
+  </div>
+</section>
+
+
+<script src="script.js">
+</script>
+</body>
+</html>
